@@ -1,0 +1,23 @@
+{
+  "name": "climate-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleebono/CSC-317-Group-Project-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fleebono/CSC-317-Group-Project-01/issues"
+  },
+  "homepage": "https://github.com/fleebono/CSC-317-Group-Project-01#readme",
+  "devDependencies": {
+    "vite": "^8.3.3"
+  }
+}
