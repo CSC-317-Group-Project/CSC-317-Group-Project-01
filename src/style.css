@@ -2,14 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #e6f0fa;
 }
 
 body {
-    background: linear-gradient(#42A3CE, #0D2937);
+    background: linear-gradient(to bottom,#42A3CE, #0D2937);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #e6f0fa;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 
 .navbar {
@@ -17,15 +23,21 @@ body {
     font-size: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    padding:1 rem 2rem;
+    padding: 1 rem 2rem;
     background-color: #42A3CE;
-    position: sticky;
-    top: 0;
 }
 
 .nav-links {
     display: flex;
     gap: 1rem;
+}
+
+.climateWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 footer {
@@ -35,11 +47,19 @@ footer {
     padding: 1rem;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #e6f0fa;
 }
 
-
+.card {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
 
 /*  Light Blue: #42A3CE 
     Dark Blue: #0D2937 
