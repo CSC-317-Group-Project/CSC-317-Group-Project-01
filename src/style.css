@@ -5,7 +5,6 @@
 }
 
 body {
-    background: linear-gradient(to bottom,#42A3CE, #0D2937);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1 rem 2rem;
-    background-color: #42A3CE;
+    background-color: #02C2FF;
 }
 
 .nav-links {
@@ -37,24 +36,36 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    background: linear-gradient(to bottom,#02C2FF, #06151c);
 }
 
 footer {
     margin-top: auto;
-    background-color: #0D2937;
+    background-color: #06151c;
     text-align: center;
     padding: 1rem;
+}
+
+.footer-links a::after {
+    content: "|";
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+.footer-links a:last-child::after {
+    content: "";
 }
 
 a:link,
 a:visited {
     color: #e6f0fa;
+    text-decoration: none;
 }
 
 .card {
     width: 100vw;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,5 +73,5 @@ a:visited {
 }
 
 /*  Light Blue: #42A3CE 
-    Dark Blue: #0D2937 
+    Dark Blue: #06151c 
     Text: #e6f0fa*/
