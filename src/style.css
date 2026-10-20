@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     color: #e6f0fa;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 1px;
 }
 
 header {
@@ -44,17 +46,30 @@ footer {
     background-color: #06151c;
     text-align: center;
     padding: 1rem;
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-links a::after {
     content: "|";
     margin-left: 0.5rem;
-    margin-right: 0.5rem;
     display: inline-block;
 }
 
 .footer-links a:last-child::after {
     content: "";
+}
+
+footer img {
+    height: 1.5rem;
+    width: auto;
+    object-fit: cover;
 }
 
 a:link,
@@ -67,10 +82,19 @@ a:visited {
     width: 100vw;
     height: 300px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
+
+.cardInner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
 
 /*  Light Blue: #42A3CE 
     Dark Blue: #06151c 
