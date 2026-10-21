@@ -38,7 +38,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom,#02C2FF, #06151c);
+    background: linear-gradient(to bottom, #02C2FF, #06151c);
 }
 
 footer {
@@ -56,14 +56,28 @@ footer {
     gap: 10px;
 }
 
-.footer-links a::after {
-    content: "|";
-    margin-left: 0.5rem;
-    display: inline-block;
+.spacer {
+    color: #e6f0fa;
+    cursor: default;
 }
 
-.footer-links a:last-child::after {
-    content: "";
+a:link,
+a:visited {
+    color: #e6f0fa;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: underline;
+    outline: none;
+    font-style: italic;
+    color: #FFDAB9;
+}
+
+.footer-links a:hover {
+    font-size: large;
+    font-weight: bold;
+    color: #FF00FF;
 }
 
 footer img {
@@ -72,11 +86,7 @@ footer img {
     object-fit: cover;
 }
 
-a:link,
-a:visited {
-    color: #e6f0fa;
-    text-decoration: none;
-}
+
 
 .card {
     width: 100vw;
