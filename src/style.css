@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1 rem 2rem;
-    background-color: #02C2FF;
+    background-color: #1BC8FF;
 }
 
 .nav-links {
@@ -42,12 +42,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #02C2FF, #06151c);
+    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("backgroundFish.png") center/contain;
 }
 
 footer {
     margin-top: auto;
-    background-color: #06151c;
+    background-color: #132128;
     text-align: center;
     padding: 1rem;
 
@@ -111,11 +111,35 @@ footer img {
 }
 
 .cardBottom {
-    padding: 0 50px;
     text-align: left;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+.cardBottom ul,
+.cardBottom ol {
+    list-style-position: inside;
+    padding: 0 20px;
+}
 
-/*  Light Blue: #42A3CE 
-    Dark Blue: #06151c 
+.cardBottom li {
+    padding: 5px 0;
+}
+
+.precipitationData {
+    text-shadow: 1px 1px 1px #ce0000;
+}
+
+.currentData {
+    text-shadow: 1px 1px 1px #ff4400;
+}
+
+.acidData {
+    text-shadow: 1px 1px 1px #FF00FF;
+}
+
+/*  Light Blue: #0FC5FF 
+    Dark Blue: #132128 
     Text: #e6f0fa*/
