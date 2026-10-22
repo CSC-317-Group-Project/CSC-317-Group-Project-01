@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #F67B00;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -25,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1 rem 2rem;
-    background-color: #02C2FF;
+    background-color: #1BC8FF;
 }
 
 .nav-links {
@@ -38,12 +42,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #02C2FF, #06151c);
+    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("backgroundFish.png") center/contain;
 }
 
 footer {
     margin-top: auto;
-    background-color: #06151c;
+    background-color: #132128;
     text-align: center;
     padding: 1rem;
 
@@ -90,22 +94,52 @@ footer img {
 
 .card {
     width: 100vw;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     font-size: 1.2rem;
+    margin: 25px 0;
 }
 
-.cardInner {
+.cardTop {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
+.cardBottom {
+    text-align: left;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-/*  Light Blue: #42A3CE 
-    Dark Blue: #06151c 
+.cardBottom ul,
+.cardBottom ol {
+    list-style-position: inside;
+    padding: 0 20px;
+}
+
+.cardBottom li {
+    padding: 5px 0;
+}
+
+.precipitationData {
+    text-shadow: 1px 1px 1px #ce0000;
+}
+
+.currentData {
+    text-shadow: 1px 1px 1px #ff4400;
+}
+
+.acidData {
+    text-shadow: 1px 1px 1px #FF00FF;
+}
+
+/*  Light Blue: #0FC5FF 
+    Dark Blue: #132128 
     Text: #e6f0fa*/
