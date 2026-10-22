@@ -113,9 +113,10 @@ footer img {
 .cardBottom {
     text-align: left;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 30px;
     max-width: 1000px;
     margin: 0 auto;
+    line-height: 1.2;
 }
 
 .cardBottom ul,
@@ -126,20 +127,29 @@ footer img {
 
 .cardBottom li {
     padding: 5px 0;
+    text-indent: -1.3rem;
+}
+
+.cardBottom p:first-child::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    float: left;
+    margin-top: -11px;
 }
 
 .precipitationData {
-    text-shadow: 1px 1px 1px #ce0000;
+    text-shadow: 0 0 2px #8abc00;
+}
+
+.precipitationData p:first-child::first-letter {
+    margin-right: 5px;
 }
 
 .currentData {
-    text-shadow: 1px 1px 1px #ff4400;
+    text-shadow: 0 0 2px #a125ff;
+    margin-top: 5px;
 }
 
 .acidData {
-    text-shadow: 1px 1px 1px #FF00FF;
+    text-shadow: 0 0 2px #FF00FF;
 }
-
-/*  Light Blue: #0FC5FF 
-    Dark Blue: #132128 
-    Text: #e6f0fa*/
