@@ -24,11 +24,13 @@ header {
 }
 
 .navbar {
+    position: relative;
     display: flex;
-    font-size: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1 rem 2rem;
+    min-height: 75px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     background-color: #1BC8FF;
 }
 
@@ -50,7 +52,6 @@ footer {
     background-color: #132128;
     text-align: center;
     padding: 1rem;
-
 }
 
 .footer-links {
@@ -90,10 +91,9 @@ footer img {
     object-fit: cover;
 }
 
-
-
+/* % instead of vw: vw includes the scrollbar and causes side scrolling */
 .card {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
