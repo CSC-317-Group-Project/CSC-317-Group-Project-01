@@ -42,7 +42,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("backgroundFish.png") center/contain;
+    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("../assets/backgroundFish.png") center/contain;
 }
 
 footer {
