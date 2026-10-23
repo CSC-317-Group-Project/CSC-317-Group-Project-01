@@ -200,3 +200,29 @@ footer img {
 .acidData {
     text-shadow: 0 0 2px #FF00FF;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1.25rem;
+    }
+
+    .cardTop {
+        padding: 0 1.25rem;
+        gap: 12px;
+    }
+
+    .cardTop h1,
+    .cardTop h2 {
+        font-size: 1.5rem;
+    }
+
+    .cardTop img {
+        height: 50px;
+        width: auto;
+    }
+
+    .cardBottom {
+        padding: 0 1.25rem;
+        font-size: 1rem;
+    }
+}
