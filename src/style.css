@@ -184,21 +184,8 @@ footer img {
     margin-top: -11px;
 }
 
-.precipitationData {
-    text-shadow: 0 0 2px #8abc00;
-}
-
 .precipitationData p:first-child::first-letter {
     margin-right: 5px;
-}
-
-.currentData {
-    text-shadow: 0 0 2px #a125ff;
-    margin-top: 5px;
-}
-
-.acidData {
-    text-shadow: 0 0 2px #FF00FF;
 }
 
 @media (max-width: 768px) {
