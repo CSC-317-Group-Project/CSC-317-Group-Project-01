@@ -9,6 +9,9 @@
 }
 
 body {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -59,9 +62,17 @@ header {
 }
 
 /* turns into an x when opened */
-.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 
 @media (max-width: 768px) and (pointer: coarse) {
     .hamburger {
@@ -180,8 +191,6 @@ footer img {
 .cardBottom p:first-child::first-letter {
     font-size: 2.5rem;
     font-weight: bold;
-    float: left;
-    margin-top: -11px;
 }
 
 .precipitationData p:first-child::first-letter {
