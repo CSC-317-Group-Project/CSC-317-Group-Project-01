@@ -24,17 +24,66 @@ header {
 }
 
 .navbar {
+    position: relative;
     display: flex;
-    font-size: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1 rem 2rem;
+    min-height: 75px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     background-color: #1BC8FF;
 }
 
 .nav-links {
     display: flex;
     gap: 1rem;
+    list-style: none;
+    /* removes stray bullets */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: #e6f0fa;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* turns into an x when opened */
+.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 768px) and (pointer: coarse) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        background-color: #1BC8FF;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
 }
 
 .climateWrapper {
@@ -42,7 +91,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("backgroundFish.png") center/contain;
+    background: linear-gradient(to bottom, rgba(2, 194, 255, 0.9), rgba(6, 21, 28, 0.95)), url("../assets/backgroundFish.png") center/contain;
 }
 
 footer {
@@ -50,7 +99,6 @@ footer {
     background-color: #132128;
     text-align: center;
     padding: 1rem;
-
 }
 
 .footer-links {
@@ -90,10 +138,9 @@ footer img {
     object-fit: cover;
 }
 
-
-
+/* % instead of vw: vw includes the scrollbar and causes side scrolling */
 .card {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -152,4 +199,30 @@ footer img {
 
 .acidData {
     text-shadow: 0 0 2px #FF00FF;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1.25rem;
+    }
+
+    .cardTop {
+        padding: 0 1.25rem;
+        gap: 12px;
+    }
+
+    .cardTop h1,
+    .cardTop h2 {
+        font-size: 1.5rem;
+    }
+
+    .cardTop img {
+        height: 50px;
+        width: auto;
+    }
+
+    .cardBottom {
+        padding: 0 1.25rem;
+        font-size: 1rem;
+    }
 }
